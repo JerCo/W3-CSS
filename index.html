@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+h1{
+  text-align: center;
+}
+
+</style>
+
+<script>
+function openTab(tab) {
+  var i;
+  var x = document.getElementsByClassName("tab-func");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tab).style.display = "block";  
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="w3-container w3-border">
+<h1>Test Page</h1>
+</div>
+
+<div class="w3-bar w3-pink w3-card">
+  <button class="w3-bar-item w3-button" onclick="openTab('Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('About')">About Us</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Contact')">Contact Info</button>
+</div>
+
+<div id="Home" class="tab-func w3-container w3-animate-opacity">
+  <h2>Home</h2>
+  <a target="_blank" href="#">Link</a>
+</div>
+
+<div id="About" class="tab-func w3-container w3-animate-opacity" style="display:none">
+  <h2>About</h2>
+  <a target="_blank" href="#">Link</a>
+</div>
+
+<div id="Contact" class="tab-func w3-container w3-animate-opacity" style="display:none">
+  <h2>Contact Us</h2>
+  <a target="_blank" href="#">Link</a>
+</div>
+
+</body>
+
+</html>
